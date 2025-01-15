@@ -1,0 +1,65 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(Captura\ de\ tela\ de\ 2025-01-14\ 20-18-10.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+  }
+  
+  header {
+    padding: 10px 20px;
+  }
+  
+  /* Container para todo o menu */
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-icon-left img,
+  .search-icon img,
+  .menu-hamburger img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .menu-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .menu-items a:hover {
+    text-decoration: underline;
+  }
+   
+  /* Ajuste para o layout responsivo (caso precise de adaptação para dispositivos menores) */
+  @media (max-width: 768px) {
+    .menu-items {
+      display: none; /* Esconde os itens de menu em telas menores */
+    }
+  
+    .menu-hamburger {
+      display: block;
+    }
+  }
+  
